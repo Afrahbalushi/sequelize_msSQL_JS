@@ -1,7 +1,8 @@
 const { Sequelize, DataTypes } = require('sequelize');
 const sequelize = new Sequelize('testdb', 'sa', 'root', {
   host: 'localhost',
-  dialect: 'mssql'
+  dialect: 'mssql',
+  timezone: '+04:00'
 });
 
 const db = {};
